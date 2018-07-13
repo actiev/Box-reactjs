@@ -1,0 +1,1592 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests add new column 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Grid
+    initialHeight={1}
+    initialWidth={1}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        false,
+        false,
+        <button
+          className="container__add_column"
+          onClick={[Function]}
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          +
+        </button>,
+        <button
+          className="container__add_row"
+          onClick={[Function]}
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          +
+        </button>,
+        <div
+          className="wrapper"
+          onMouseMove={[Function]}
+        >
+          <div
+            className="row"
+            index={0}
+          >
+            <Cell
+              index={0}
+              style={
+                Object {
+                  "height": undefined,
+                  "width": undefined,
+                }
+              }
+            />
+            <Cell
+              index={1}
+              style={
+                Object {
+                  "height": undefined,
+                  "width": undefined,
+                }
+              }
+            />
+          </div>
+        </div>,
+      ],
+      "className": "app-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      false,
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "+",
+          "className": "container__add_column",
+          "onClick": [Function],
+          "style": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+        },
+        "ref": null,
+        "rendered": "+",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "+",
+          "className": "container__add_row",
+          "onClick": [Function],
+          "style": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+        },
+        "ref": null,
+        "rendered": "+",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="row"
+              index={0}
+            >
+              <Cell
+                index={0}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+              <Cell
+                index={1}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+            </div>,
+          ],
+          "className": "wrapper",
+          "onMouseMove": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Cell
+                  index={0}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />,
+                <Cell
+                  index={1}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />,
+              ],
+              "className": "row",
+              "index": 0,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "index": 0,
+                  "style": Object {
+                    "height": undefined,
+                    "width": undefined,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "class",
+                "props": Object {
+                  "index": 1,
+                  "style": Object {
+                    "height": undefined,
+                    "width": undefined,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          false,
+          false,
+          <button
+            className="container__add_column"
+            onClick={[Function]}
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          >
+            +
+          </button>,
+          <button
+            className="container__add_row"
+            onClick={[Function]}
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          >
+            +
+          </button>,
+          <div
+            className="wrapper"
+            onMouseMove={[Function]}
+          >
+            <div
+              className="row"
+              index={0}
+            >
+              <Cell
+                index={0}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+              <Cell
+                index={1}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+            </div>
+          </div>,
+        ],
+        "className": "app-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        false,
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "+",
+            "className": "container__add_column",
+            "onClick": [Function],
+            "style": Object {
+              "height": undefined,
+              "width": undefined,
+            },
+          },
+          "ref": null,
+          "rendered": "+",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "+",
+            "className": "container__add_row",
+            "onClick": [Function],
+            "style": Object {
+              "height": undefined,
+              "width": undefined,
+            },
+          },
+          "ref": null,
+          "rendered": "+",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="row"
+                index={0}
+              >
+                <Cell
+                  index={0}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+                <Cell
+                  index={1}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+              </div>,
+            ],
+            "className": "wrapper",
+            "onMouseMove": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Cell
+                    index={0}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
+                    }
+                  />,
+                  <Cell
+                    index={1}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
+                    }
+                  />,
+                ],
+                "className": "row",
+                "index": 0,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "class",
+                  "props": Object {
+                    "index": 0,
+                    "style": Object {
+                      "height": undefined,
+                      "width": undefined,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "1",
+                  "nodeType": "class",
+                  "props": Object {
+                    "index": 1,
+                    "style": Object {
+                      "height": undefined,
+                      "width": undefined,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`tests add new row 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Grid
+    initialHeight={1}
+    initialWidth={1}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        false,
+        false,
+        <button
+          className="container__add_column"
+          onClick={[Function]}
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          +
+        </button>,
+        <button
+          className="container__add_row"
+          onClick={[Function]}
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          +
+        </button>,
+        <div
+          className="wrapper"
+          onMouseMove={[Function]}
+        >
+          <div
+            className="row"
+            index={0}
+          >
+            <Cell
+              index={0}
+              style={
+                Object {
+                  "height": undefined,
+                  "width": undefined,
+                }
+              }
+            />
+          </div>
+          <div
+            className="row"
+            index={1}
+          >
+            <Cell
+              index={0}
+              style={
+                Object {
+                  "height": undefined,
+                  "width": undefined,
+                }
+              }
+            />
+          </div>
+        </div>,
+      ],
+      "className": "app-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      false,
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "+",
+          "className": "container__add_column",
+          "onClick": [Function],
+          "style": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+        },
+        "ref": null,
+        "rendered": "+",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "+",
+          "className": "container__add_row",
+          "onClick": [Function],
+          "style": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+        },
+        "ref": null,
+        "rendered": "+",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="row"
+              index={0}
+            >
+              <Cell
+                index={0}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+            </div>,
+            <div
+              className="row"
+              index={1}
+            >
+              <Cell
+                index={0}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+            </div>,
+          ],
+          "className": "wrapper",
+          "onMouseMove": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Cell
+                  index={0}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />,
+              ],
+              "className": "row",
+              "index": 0,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "index": 0,
+                  "style": Object {
+                    "height": undefined,
+                    "width": undefined,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Cell
+                  index={0}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />,
+              ],
+              "className": "row",
+              "index": 1,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "index": 0,
+                  "style": Object {
+                    "height": undefined,
+                    "width": undefined,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          false,
+          false,
+          <button
+            className="container__add_column"
+            onClick={[Function]}
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          >
+            +
+          </button>,
+          <button
+            className="container__add_row"
+            onClick={[Function]}
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          >
+            +
+          </button>,
+          <div
+            className="wrapper"
+            onMouseMove={[Function]}
+          >
+            <div
+              className="row"
+              index={0}
+            >
+              <Cell
+                index={0}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="row"
+              index={1}
+            >
+              <Cell
+                index={0}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+            </div>
+          </div>,
+        ],
+        "className": "app-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        false,
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "+",
+            "className": "container__add_column",
+            "onClick": [Function],
+            "style": Object {
+              "height": undefined,
+              "width": undefined,
+            },
+          },
+          "ref": null,
+          "rendered": "+",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "+",
+            "className": "container__add_row",
+            "onClick": [Function],
+            "style": Object {
+              "height": undefined,
+              "width": undefined,
+            },
+          },
+          "ref": null,
+          "rendered": "+",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="row"
+                index={0}
+              >
+                <Cell
+                  index={0}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+              </div>,
+              <div
+                className="row"
+                index={1}
+              >
+                <Cell
+                  index={0}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+              </div>,
+            ],
+            "className": "wrapper",
+            "onMouseMove": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Cell
+                    index={0}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
+                    }
+                  />,
+                ],
+                "className": "row",
+                "index": 0,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "class",
+                  "props": Object {
+                    "index": 0,
+                    "style": Object {
+                      "height": undefined,
+                      "width": undefined,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Cell
+                    index={0}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
+                    }
+                  />,
+                ],
+                "className": "row",
+                "index": 1,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "class",
+                  "props": Object {
+                    "index": 0,
+                    "style": Object {
+                      "height": undefined,
+                      "width": undefined,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`tests create test grid 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Grid
+    initialHeight={2}
+    initialWidth={2}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        false,
+        false,
+        <button
+          className="container__add_column"
+          onClick={[Function]}
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          +
+        </button>,
+        <button
+          className="container__add_row"
+          onClick={[Function]}
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          +
+        </button>,
+        <div
+          className="wrapper"
+          onMouseMove={[Function]}
+        >
+          <div
+            className="row"
+            index={0}
+          >
+            <Cell
+              index={0}
+              style={
+                Object {
+                  "height": undefined,
+                  "width": undefined,
+                }
+              }
+            />
+            <Cell
+              index={1}
+              style={
+                Object {
+                  "height": undefined,
+                  "width": undefined,
+                }
+              }
+            />
+          </div>
+          <div
+            className="row"
+            index={1}
+          >
+            <Cell
+              index={0}
+              style={
+                Object {
+                  "height": undefined,
+                  "width": undefined,
+                }
+              }
+            />
+            <Cell
+              index={1}
+              style={
+                Object {
+                  "height": undefined,
+                  "width": undefined,
+                }
+              }
+            />
+          </div>
+        </div>,
+      ],
+      "className": "app-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      false,
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "+",
+          "className": "container__add_column",
+          "onClick": [Function],
+          "style": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+        },
+        "ref": null,
+        "rendered": "+",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "+",
+          "className": "container__add_row",
+          "onClick": [Function],
+          "style": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+        },
+        "ref": null,
+        "rendered": "+",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="row"
+              index={0}
+            >
+              <Cell
+                index={0}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+              <Cell
+                index={1}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+            </div>,
+            <div
+              className="row"
+              index={1}
+            >
+              <Cell
+                index={0}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+              <Cell
+                index={1}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+            </div>,
+          ],
+          "className": "wrapper",
+          "onMouseMove": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Cell
+                  index={0}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />,
+                <Cell
+                  index={1}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />,
+              ],
+              "className": "row",
+              "index": 0,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "index": 0,
+                  "style": Object {
+                    "height": undefined,
+                    "width": undefined,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "class",
+                "props": Object {
+                  "index": 1,
+                  "style": Object {
+                    "height": undefined,
+                    "width": undefined,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Cell
+                  index={0}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />,
+                <Cell
+                  index={1}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />,
+              ],
+              "className": "row",
+              "index": 1,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "index": 0,
+                  "style": Object {
+                    "height": undefined,
+                    "width": undefined,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "class",
+                "props": Object {
+                  "index": 1,
+                  "style": Object {
+                    "height": undefined,
+                    "width": undefined,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          false,
+          false,
+          <button
+            className="container__add_column"
+            onClick={[Function]}
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          >
+            +
+          </button>,
+          <button
+            className="container__add_row"
+            onClick={[Function]}
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          >
+            +
+          </button>,
+          <div
+            className="wrapper"
+            onMouseMove={[Function]}
+          >
+            <div
+              className="row"
+              index={0}
+            >
+              <Cell
+                index={0}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+              <Cell
+                index={1}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="row"
+              index={1}
+            >
+              <Cell
+                index={0}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+              <Cell
+                index={1}
+                style={
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  }
+                }
+              />
+            </div>
+          </div>,
+        ],
+        "className": "app-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        false,
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "+",
+            "className": "container__add_column",
+            "onClick": [Function],
+            "style": Object {
+              "height": undefined,
+              "width": undefined,
+            },
+          },
+          "ref": null,
+          "rendered": "+",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "+",
+            "className": "container__add_row",
+            "onClick": [Function],
+            "style": Object {
+              "height": undefined,
+              "width": undefined,
+            },
+          },
+          "ref": null,
+          "rendered": "+",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="row"
+                index={0}
+              >
+                <Cell
+                  index={0}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+                <Cell
+                  index={1}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+              </div>,
+              <div
+                className="row"
+                index={1}
+              >
+                <Cell
+                  index={0}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+                <Cell
+                  index={1}
+                  style={
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+              </div>,
+            ],
+            "className": "wrapper",
+            "onMouseMove": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Cell
+                    index={0}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
+                    }
+                  />,
+                  <Cell
+                    index={1}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
+                    }
+                  />,
+                ],
+                "className": "row",
+                "index": 0,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "class",
+                  "props": Object {
+                    "index": 0,
+                    "style": Object {
+                      "height": undefined,
+                      "width": undefined,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "1",
+                  "nodeType": "class",
+                  "props": Object {
+                    "index": 1,
+                    "style": Object {
+                      "height": undefined,
+                      "width": undefined,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Cell
+                    index={0}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
+                    }
+                  />,
+                  <Cell
+                    index={1}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
+                    }
+                  />,
+                ],
+                "className": "row",
+                "index": 1,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "class",
+                  "props": Object {
+                    "index": 0,
+                    "style": Object {
+                      "height": undefined,
+                      "width": undefined,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "1",
+                  "nodeType": "class",
+                  "props": Object {
+                    "index": 1,
+                    "style": Object {
+                      "height": undefined,
+                      "width": undefined,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`tests remove last column 1`] = `
+Object {
+  "display remove column button": false,
+}
+`;
+
+exports[`tests remove last row 1`] = `
+Object {
+  "display remove row button": false,
+}
+`;
