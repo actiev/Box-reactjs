@@ -4,6 +4,7 @@ import Cell from './Cell'
 export default class Grid extends Component {
   constructor (props) {
     super(props)
+
     this.selectedCell = null
 
     this.style = {
@@ -11,7 +12,7 @@ export default class Grid extends Component {
       width: this.props.cellSize
     }
 
-    const cellsArray =  []
+    const cellsArray = []
     const rowsArray = []
 
     for (let i = 0; i < this.props.initialWidth; i++) {
@@ -37,6 +38,7 @@ export default class Grid extends Component {
     this.removeColumn = this.removeColumn.bind(this)
     this.removeRow = this.removeRow.bind(this)
     this.moveRemoveButtons = this.moveRemoveButtons.bind(this)
+    this.showButtons = this.showButtons.bind(this)
   }
 
   getGridCoords (e) {
@@ -71,7 +73,7 @@ export default class Grid extends Component {
   removeColumn () {
     const index = [].indexOf.call(this.selectedCell.parentNode.children, this.selectedCell)
 
-    const newCellsArray = [...this.state.cellsArray]
+    const newCellsArray = this.state.cellsArray
 
     newCellsArray.splice(index, 1)
 
@@ -87,7 +89,7 @@ export default class Grid extends Component {
   removeRow () {
     const index = [].indexOf.call(this.selectedCell.parentNode.parentNode.children, this.selectedCell.parentElement)
 
-    const newRowsArray = [...this.state.rowsArray]
+    const newRowsArray = this.state.rowsArray
 
     newRowsArray.splice(index, 1)
 
@@ -103,23 +105,15 @@ export default class Grid extends Component {
   moveRemoveButtons (e) {
     window.addEventListener('mousemove', this.getGridCoords)
 
-    if (e.target.dataset.cell) {
+    if (e.target.dataset.index) {
       this.selectedCell = e.target
     }
 
-    if (this.state.cellsArray.length > 1) {
-      this.setState({removeColBtn: true})
-    }
-
-    if (this.state.rowsArray.length > 1) {
-      this.setState({removeRowBtn: true})
-    }
-
-    if (document.querySelector('.container__remove_column')) {
+    if (this.state.removeColBtn) {
       document.querySelector('.container__remove_column').style.transform = `translateX(${e.target.offsetLeft}px)`
     }
 
-    if (document.querySelector('.container__remove_row')) {
+    if (this.state.removeRowBtn) {
       document.querySelector('.container__remove_row').style.transform = `translateY(${e.target.offsetTop}px)`
     }
   }
@@ -133,6 +127,16 @@ export default class Grid extends Component {
     })
   }
 
+  showButtons () {
+    if (this.state.cellsArray.length > 1) {
+      this.setState({removeColBtn: true})
+    }
+
+    if (this.state.rowsArray.length > 1) {
+      this.setState({removeRowBtn: true})
+    }
+  }
+
   render () {
     const grid = this.state.rowsArray.map((row, index) => <div className="row" key={index}>{this.state.cellsArray}</div>)
 
@@ -143,7 +147,7 @@ export default class Grid extends Component {
       <button style={this.style} className="container__remove_row" onClick={this.removeRow}>&minus;</button>
 
     return (
-      <div className="app-container">
+      <div className="app-container" onMouseEnter={this.showButtons}>
         {removeColumn}
         {removeRow}
         <button style={this.style} className="container__add_column" onClick={this.addColumn}>&#43;</button>
