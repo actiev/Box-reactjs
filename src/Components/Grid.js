@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Cell from './Cell'
 import classNames from 'classnames'
+import update from 'immutability-helper'
 
 export default class Grid extends Component {
   constructor (props) {
@@ -44,16 +45,20 @@ export default class Grid extends Component {
   }
 
   addColumn () {
+    const addColumn = update(this.state.cellsArray, {$push: [{id: this.state.cellsCount}]})
+
     this.setState({
       cellsCount: this.state.cellsCount + 1,
-      cellsArray: [...this.state.cellsArray, {id: this.state.cellsCount}]
+      cellsArray: addColumn
     })
   }
 
   addRow () {
+    const addRow = update(this.state.rowsArray, {$push: [{cells: this.state.cellsArray, id: this.state.rowsCount}]})
+
     this.setState({
       rowsCount: this.state.rowsCount + 1,
-      rowsArray: [...this.state.rowsArray, {cells: this.state.cellsArray, id: this.state.rowsCount}]
+      rowsArray: addRow
     })
   }
 
@@ -62,13 +67,11 @@ export default class Grid extends Component {
 
     const index = [].indexOf.call(this.selectedCell.parentNode.children, this.selectedCell)
 
-    const newCellsArray = [...this.state.cellsArray]
-
-    newCellsArray.splice(index, 1)
+    const removeColumn = update(this.state.cellsArray, {$splice: [[index, 1]]})
 
     if (index >= 0) {
       this.setState({
-        cellsArray: newCellsArray
+        cellsArray: removeColumn
       })
     }
   }
@@ -78,13 +81,11 @@ export default class Grid extends Component {
 
     const index = [].indexOf.call(this.selectedCell.parentNode.parentNode.children, this.selectedCell.parentElement)
 
-    const newRowsArray = [...this.state.rowsArray]
-
-    newRowsArray.splice(index, 1)
+    const removeRow = update(this.state.rowsArray, {$splice: [[index, 1]]})
 
     if (index >= 0) {
       this.setState({
-        rowsArray: newRowsArray
+        rowsArray: removeRow
       })
     }
   }
