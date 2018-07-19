@@ -16,8 +16,8 @@
   z-index: 10;
 }
 
-.hide {
-  display: none;
+.show {
+  display: block !important;
 }
 
 .container__add_row {
@@ -86,6 +86,7 @@
   cursor: pointer;
   transition: 0.9s;
   position: absolute;
+  display: none;
 }
 
 .container__remove_column:hover,

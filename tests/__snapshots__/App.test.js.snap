@@ -21,8 +21,32 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        false,
-        false,
+        <button
+          className="container__remove_column"
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          −
+        </button>,
+        <button
+          className="container__remove_row"
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          −
+        </button>,
         <button
           className="container__add_column"
           onClick={[Function]}
@@ -53,8 +77,8 @@ ShallowWrapper {
         >
           <div
             className="row"
-            index={0}
           >
+             
             <Cell
               index={0}
               style={
@@ -77,11 +101,47 @@ ShallowWrapper {
         </div>,
       ],
       "className": "app-container",
+      "onMouseEnter": [Function],
+      "onMouseLeave": [Function],
     },
     "ref": null,
     "rendered": Array [
-      false,
-      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "−",
+          "className": "container__remove_column",
+          "onClick": [Function],
+          "onMouseLeave": [Function],
+          "style": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+        },
+        "ref": "removeColbtn",
+        "rendered": "−",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "−",
+          "className": "container__remove_row",
+          "onClick": [Function],
+          "onMouseLeave": [Function],
+          "style": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+        },
+        "ref": "removeRowbtn",
+        "rendered": "−",
+        "type": "button",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -124,8 +184,8 @@ ShallowWrapper {
           "children": Array [
             <div
               className="row"
-              index={0}
             >
+               
               <Cell
                 index={0}
                 style={
@@ -157,30 +217,33 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <Cell
-                  index={0}
-                  style={
-                    Object {
-                      "height": undefined,
-                      "width": undefined,
+                " ",
+                Array [
+                  <Cell
+                    index={0}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
                     }
-                  }
-                />,
-                <Cell
-                  index={1}
-                  style={
-                    Object {
-                      "height": undefined,
-                      "width": undefined,
+                  />,
+                  <Cell
+                    index={1}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
                     }
-                  }
-                />,
+                  />,
+                ],
               ],
               "className": "row",
-              "index": 0,
             },
             "ref": null,
             "rendered": Array [
+              " ",
               Object {
                 "instance": null,
                 "key": "0",
@@ -227,8 +290,32 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          false,
-          false,
+          <button
+            className="container__remove_column"
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          >
+            −
+          </button>,
+          <button
+            className="container__remove_row"
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          >
+            −
+          </button>,
           <button
             className="container__add_column"
             onClick={[Function]}
@@ -259,8 +346,8 @@ ShallowWrapper {
           >
             <div
               className="row"
-              index={0}
             >
+               
               <Cell
                 index={0}
                 style={
@@ -283,11 +370,47 @@ ShallowWrapper {
           </div>,
         ],
         "className": "app-container",
+        "onMouseEnter": [Function],
+        "onMouseLeave": [Function],
       },
       "ref": null,
       "rendered": Array [
-        false,
-        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "−",
+            "className": "container__remove_column",
+            "onClick": [Function],
+            "onMouseLeave": [Function],
+            "style": Object {
+              "height": undefined,
+              "width": undefined,
+            },
+          },
+          "ref": "removeColbtn",
+          "rendered": "−",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "−",
+            "className": "container__remove_row",
+            "onClick": [Function],
+            "onMouseLeave": [Function],
+            "style": Object {
+              "height": undefined,
+              "width": undefined,
+            },
+          },
+          "ref": "removeRowbtn",
+          "rendered": "−",
+          "type": "button",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -330,8 +453,8 @@ ShallowWrapper {
             "children": Array [
               <div
                 className="row"
-                index={0}
               >
+                 
                 <Cell
                   index={0}
                   style={
@@ -363,30 +486,33 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <Cell
-                    index={0}
-                    style={
-                      Object {
-                        "height": undefined,
-                        "width": undefined,
+                  " ",
+                  Array [
+                    <Cell
+                      index={0}
+                      style={
+                        Object {
+                          "height": undefined,
+                          "width": undefined,
+                        }
                       }
-                    }
-                  />,
-                  <Cell
-                    index={1}
-                    style={
-                      Object {
-                        "height": undefined,
-                        "width": undefined,
+                    />,
+                    <Cell
+                      index={1}
+                      style={
+                        Object {
+                          "height": undefined,
+                          "width": undefined,
+                        }
                       }
-                    }
-                  />,
+                    />,
+                  ],
                 ],
                 "className": "row",
-                "index": 0,
               },
               "ref": null,
               "rendered": Array [
+                " ",
                 Object {
                   "instance": null,
                   "key": "0",
@@ -458,8 +584,32 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        false,
-        false,
+        <button
+          className="container__remove_column"
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          −
+        </button>,
+        <button
+          className="container__remove_row"
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          −
+        </button>,
         <button
           className="container__add_column"
           onClick={[Function]}
@@ -490,8 +640,8 @@ ShallowWrapper {
         >
           <div
             className="row"
-            index={0}
           >
+             
             <Cell
               index={0}
               style={
@@ -504,8 +654,8 @@ ShallowWrapper {
           </div>
           <div
             className="row"
-            index={1}
           >
+             
             <Cell
               index={0}
               style={
@@ -519,11 +669,47 @@ ShallowWrapper {
         </div>,
       ],
       "className": "app-container",
+      "onMouseEnter": [Function],
+      "onMouseLeave": [Function],
     },
     "ref": null,
     "rendered": Array [
-      false,
-      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "−",
+          "className": "container__remove_column",
+          "onClick": [Function],
+          "onMouseLeave": [Function],
+          "style": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+        },
+        "ref": "removeColbtn",
+        "rendered": "−",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "−",
+          "className": "container__remove_row",
+          "onClick": [Function],
+          "onMouseLeave": [Function],
+          "style": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+        },
+        "ref": "removeRowbtn",
+        "rendered": "−",
+        "type": "button",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -566,8 +752,8 @@ ShallowWrapper {
           "children": Array [
             <div
               className="row"
-              index={0}
             >
+               
               <Cell
                 index={0}
                 style={
@@ -580,8 +766,8 @@ ShallowWrapper {
             </div>,
             <div
               className="row"
-              index={1}
             >
+               
               <Cell
                 index={0}
                 style={
@@ -604,21 +790,24 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <Cell
-                  index={0}
-                  style={
-                    Object {
-                      "height": undefined,
-                      "width": undefined,
+                " ",
+                Array [
+                  <Cell
+                    index={0}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
                     }
-                  }
-                />,
+                  />,
+                ],
               ],
               "className": "row",
-              "index": 0,
             },
             "ref": null,
             "rendered": Array [
+              " ",
               Object {
                 "instance": null,
                 "key": "0",
@@ -643,21 +832,24 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <Cell
-                  index={0}
-                  style={
-                    Object {
-                      "height": undefined,
-                      "width": undefined,
+                " ",
+                Array [
+                  <Cell
+                    index={0}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
                     }
-                  }
-                />,
+                  />,
+                ],
               ],
               "className": "row",
-              "index": 1,
             },
             "ref": null,
             "rendered": Array [
+              " ",
               Object {
                 "instance": null,
                 "key": "0",
@@ -689,8 +881,32 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          false,
-          false,
+          <button
+            className="container__remove_column"
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          >
+            −
+          </button>,
+          <button
+            className="container__remove_row"
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          >
+            −
+          </button>,
           <button
             className="container__add_column"
             onClick={[Function]}
@@ -721,8 +937,8 @@ ShallowWrapper {
           >
             <div
               className="row"
-              index={0}
             >
+               
               <Cell
                 index={0}
                 style={
@@ -735,8 +951,8 @@ ShallowWrapper {
             </div>
             <div
               className="row"
-              index={1}
             >
+               
               <Cell
                 index={0}
                 style={
@@ -750,11 +966,47 @@ ShallowWrapper {
           </div>,
         ],
         "className": "app-container",
+        "onMouseEnter": [Function],
+        "onMouseLeave": [Function],
       },
       "ref": null,
       "rendered": Array [
-        false,
-        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "−",
+            "className": "container__remove_column",
+            "onClick": [Function],
+            "onMouseLeave": [Function],
+            "style": Object {
+              "height": undefined,
+              "width": undefined,
+            },
+          },
+          "ref": "removeColbtn",
+          "rendered": "−",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "−",
+            "className": "container__remove_row",
+            "onClick": [Function],
+            "onMouseLeave": [Function],
+            "style": Object {
+              "height": undefined,
+              "width": undefined,
+            },
+          },
+          "ref": "removeRowbtn",
+          "rendered": "−",
+          "type": "button",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -797,8 +1049,8 @@ ShallowWrapper {
             "children": Array [
               <div
                 className="row"
-                index={0}
               >
+                 
                 <Cell
                   index={0}
                   style={
@@ -811,8 +1063,8 @@ ShallowWrapper {
               </div>,
               <div
                 className="row"
-                index={1}
               >
+                 
                 <Cell
                   index={0}
                   style={
@@ -835,21 +1087,24 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <Cell
-                    index={0}
-                    style={
-                      Object {
-                        "height": undefined,
-                        "width": undefined,
+                  " ",
+                  Array [
+                    <Cell
+                      index={0}
+                      style={
+                        Object {
+                          "height": undefined,
+                          "width": undefined,
+                        }
                       }
-                    }
-                  />,
+                    />,
+                  ],
                 ],
                 "className": "row",
-                "index": 0,
               },
               "ref": null,
               "rendered": Array [
+                " ",
                 Object {
                   "instance": null,
                   "key": "0",
@@ -874,21 +1129,24 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <Cell
-                    index={0}
-                    style={
-                      Object {
-                        "height": undefined,
-                        "width": undefined,
+                  " ",
+                  Array [
+                    <Cell
+                      index={0}
+                      style={
+                        Object {
+                          "height": undefined,
+                          "width": undefined,
+                        }
                       }
-                    }
-                  />,
+                    />,
+                  ],
                 ],
                 "className": "row",
-                "index": 1,
               },
               "ref": null,
               "rendered": Array [
+                " ",
                 Object {
                   "instance": null,
                   "key": "0",
@@ -945,8 +1203,32 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        false,
-        false,
+        <button
+          className="container__remove_column"
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          −
+        </button>,
+        <button
+          className="container__remove_row"
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          −
+        </button>,
         <button
           className="container__add_column"
           onClick={[Function]}
@@ -977,8 +1259,8 @@ ShallowWrapper {
         >
           <div
             className="row"
-            index={0}
           >
+             
             <Cell
               index={0}
               style={
@@ -1000,8 +1282,8 @@ ShallowWrapper {
           </div>
           <div
             className="row"
-            index={1}
           >
+             
             <Cell
               index={0}
               style={
@@ -1024,11 +1306,47 @@ ShallowWrapper {
         </div>,
       ],
       "className": "app-container",
+      "onMouseEnter": [Function],
+      "onMouseLeave": [Function],
     },
     "ref": null,
     "rendered": Array [
-      false,
-      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "−",
+          "className": "container__remove_column",
+          "onClick": [Function],
+          "onMouseLeave": [Function],
+          "style": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+        },
+        "ref": "removeColbtn",
+        "rendered": "−",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "−",
+          "className": "container__remove_row",
+          "onClick": [Function],
+          "onMouseLeave": [Function],
+          "style": Object {
+            "height": undefined,
+            "width": undefined,
+          },
+        },
+        "ref": "removeRowbtn",
+        "rendered": "−",
+        "type": "button",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -1071,8 +1389,8 @@ ShallowWrapper {
           "children": Array [
             <div
               className="row"
-              index={0}
             >
+               
               <Cell
                 index={0}
                 style={
@@ -1094,8 +1412,8 @@ ShallowWrapper {
             </div>,
             <div
               className="row"
-              index={1}
             >
+               
               <Cell
                 index={0}
                 style={
@@ -1127,30 +1445,33 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <Cell
-                  index={0}
-                  style={
-                    Object {
-                      "height": undefined,
-                      "width": undefined,
+                " ",
+                Array [
+                  <Cell
+                    index={0}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
                     }
-                  }
-                />,
-                <Cell
-                  index={1}
-                  style={
-                    Object {
-                      "height": undefined,
-                      "width": undefined,
+                  />,
+                  <Cell
+                    index={1}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
                     }
-                  }
-                />,
+                  />,
+                ],
               ],
               "className": "row",
-              "index": 0,
             },
             "ref": null,
             "rendered": Array [
+              " ",
               Object {
                 "instance": null,
                 "key": "0",
@@ -1190,30 +1511,33 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <Cell
-                  index={0}
-                  style={
-                    Object {
-                      "height": undefined,
-                      "width": undefined,
+                " ",
+                Array [
+                  <Cell
+                    index={0}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
                     }
-                  }
-                />,
-                <Cell
-                  index={1}
-                  style={
-                    Object {
-                      "height": undefined,
-                      "width": undefined,
+                  />,
+                  <Cell
+                    index={1}
+                    style={
+                      Object {
+                        "height": undefined,
+                        "width": undefined,
+                      }
                     }
-                  }
-                />,
+                  />,
+                ],
               ],
               "className": "row",
-              "index": 1,
             },
             "ref": null,
             "rendered": Array [
+              " ",
               Object {
                 "instance": null,
                 "key": "0",
@@ -1260,8 +1584,32 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          false,
-          false,
+          <button
+            className="container__remove_column"
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          >
+            −
+          </button>,
+          <button
+            className="container__remove_row"
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          >
+            −
+          </button>,
           <button
             className="container__add_column"
             onClick={[Function]}
@@ -1292,8 +1640,8 @@ ShallowWrapper {
           >
             <div
               className="row"
-              index={0}
             >
+               
               <Cell
                 index={0}
                 style={
@@ -1315,8 +1663,8 @@ ShallowWrapper {
             </div>
             <div
               className="row"
-              index={1}
             >
+               
               <Cell
                 index={0}
                 style={
@@ -1339,11 +1687,47 @@ ShallowWrapper {
           </div>,
         ],
         "className": "app-container",
+        "onMouseEnter": [Function],
+        "onMouseLeave": [Function],
       },
       "ref": null,
       "rendered": Array [
-        false,
-        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "−",
+            "className": "container__remove_column",
+            "onClick": [Function],
+            "onMouseLeave": [Function],
+            "style": Object {
+              "height": undefined,
+              "width": undefined,
+            },
+          },
+          "ref": "removeColbtn",
+          "rendered": "−",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "−",
+            "className": "container__remove_row",
+            "onClick": [Function],
+            "onMouseLeave": [Function],
+            "style": Object {
+              "height": undefined,
+              "width": undefined,
+            },
+          },
+          "ref": "removeRowbtn",
+          "rendered": "−",
+          "type": "button",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -1386,8 +1770,8 @@ ShallowWrapper {
             "children": Array [
               <div
                 className="row"
-                index={0}
               >
+                 
                 <Cell
                   index={0}
                   style={
@@ -1409,8 +1793,8 @@ ShallowWrapper {
               </div>,
               <div
                 className="row"
-                index={1}
               >
+                 
                 <Cell
                   index={0}
                   style={
@@ -1442,30 +1826,33 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <Cell
-                    index={0}
-                    style={
-                      Object {
-                        "height": undefined,
-                        "width": undefined,
+                  " ",
+                  Array [
+                    <Cell
+                      index={0}
+                      style={
+                        Object {
+                          "height": undefined,
+                          "width": undefined,
+                        }
                       }
-                    }
-                  />,
-                  <Cell
-                    index={1}
-                    style={
-                      Object {
-                        "height": undefined,
-                        "width": undefined,
+                    />,
+                    <Cell
+                      index={1}
+                      style={
+                        Object {
+                          "height": undefined,
+                          "width": undefined,
+                        }
                       }
-                    }
-                  />,
+                    />,
+                  ],
                 ],
                 "className": "row",
-                "index": 0,
               },
               "ref": null,
               "rendered": Array [
+                " ",
                 Object {
                   "instance": null,
                   "key": "0",
@@ -1505,30 +1892,33 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <Cell
-                    index={0}
-                    style={
-                      Object {
-                        "height": undefined,
-                        "width": undefined,
+                  " ",
+                  Array [
+                    <Cell
+                      index={0}
+                      style={
+                        Object {
+                          "height": undefined,
+                          "width": undefined,
+                        }
                       }
-                    }
-                  />,
-                  <Cell
-                    index={1}
-                    style={
-                      Object {
-                        "height": undefined,
-                        "width": undefined,
+                    />,
+                    <Cell
+                      index={1}
+                      style={
+                        Object {
+                          "height": undefined,
+                          "width": undefined,
+                        }
                       }
-                    }
-                  />,
+                    />,
+                  ],
                 ],
                 "className": "row",
-                "index": 1,
               },
               "ref": null,
               "rendered": Array [
+                " ",
                 Object {
                   "instance": null,
                   "key": "0",

@@ -8,6 +8,7 @@ configure({ adapter: new Adapter() })
 describe('tests', () => {
   it('create test grid', () => {
     const grid = shallow(<Grid initialWidth={2} initialHeight={2}/>)
+
     expect(grid).toMatchSnapshot()
   })
 
@@ -34,7 +35,7 @@ describe('tests', () => {
   it('remove last row', () => {
     const grid = shallow(<Grid initialWidth={6} initialHeight={1}/>)
 
-    grid.find('.wrapper').simulate('mousemove', {target: {dataset: 1}})
+    grid.simulate('mouseenter')
 
     expect({'display remove row button': grid.state('removeRowBtn')}).toMatchSnapshot()
   })
@@ -42,7 +43,7 @@ describe('tests', () => {
   it('remove last column', () => {
     const grid = shallow(<Grid initialWidth={1} initialHeight={6}/>)
 
-    grid.find('.wrapper').simulate('mousemove', {target: {dataset: 1}})
+    grid.simulate('mouseenter')
 
     expect({'display remove column button': grid.state('removeColBtn')}).toMatchSnapshot()
   })
