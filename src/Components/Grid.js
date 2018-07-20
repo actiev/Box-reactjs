@@ -8,6 +8,7 @@ export default class Grid extends Component {
     super(props)
 
     this.selectedCell = null
+    this.timer = null
 
     this.cellStyle = {
       height: props.cellSize,
@@ -93,23 +94,19 @@ export default class Grid extends Component {
       this.selectedCell = e.target
     }
 
-    if (this.state.removeColBtn) {
+    if (this.state.removeColBtn && e.target.classList.contains('cell')) {
       this.refs.removeColbtn.style.transform = `translateX(${e.target.offsetLeft}px)`
     }
 
-    if (this.state.removeRowBtn) {
+    if (this.state.removeRowBtn && e.target.classList.contains('cell')) {
       this.refs.removeRowbtn.style.transform = `translateY(${e.target.offsetTop}px)`
     }
   }
 
-  hideButtonsOutContainer (e) {
-    let timer = setTimeout(() => {
+  hideButtonsOutContainer () {
+    this.timer = setTimeout(() => {
       this.hideButtons()
     }, 1000)
-
-    if (e.target === this.refs.removeColbtn || e.target === this.refs.removeRowbtn) {
-      clearTimeout(timer)
-    }
   }
 
   hideButtons () {
@@ -143,15 +140,17 @@ export default class Grid extends Component {
     return (
       <div className="app-container" onMouseMove={this.showButtons} onMouseLeave={this.hideButtonsOutContainer}>
         <button style={this.cellStyle}
-                 onMouseLeave={this.hideButtons}
-                 ref="removeColbtn"
-                 className={removeColbtn}
-                 onClick={this.removeColumn}>&minus;</button>
+                onMouseLeave={this.hideButtons}
+                onMouseEnter={clearTimeout(this.timer)}
+                ref="removeColbtn"
+                className={removeColbtn}
+                onClick={this.removeColumn}>&minus;</button>
         <button style={this.cellStyle}
-                 ref="removeRowbtn"
-                 onMouseLeave={this.hideButtons}
-                 className={removeRowbtn}
-                 onClick={this.removeRow}>&minus;</button>
+                ref="removeRowbtn"
+                onMouseLeave={this.hideButtons}
+                onMouseEnter={clearTimeout(this.timer)}
+                className={removeRowbtn}
+                onClick={this.removeRow}>&minus;</button>
         <button style={this.cellStyle} className="container__add_column" onClick={this.addColumn}>&#43;</button>
         <button style={this.cellStyle} className="container__add_row" onClick={this.addRow}>&#43;</button>
         <div className="wrapper" onMouseMove={this.moveRemoveButtons}>
