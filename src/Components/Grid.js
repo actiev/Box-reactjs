@@ -26,8 +26,6 @@ export default class Grid extends Component {
     }
 
     this.state = {
-      cellsCount: props.initialWidth,
-      rowsCount: props.initialHeight,
       removeColBtn: false,
       removeRowBtn: false,
       cellsArray: cellsArray,
@@ -45,7 +43,7 @@ export default class Grid extends Component {
   }
 
   addColumn () {
-    const addColumn = update(this.state.cellsArray, {$push: [{id: this.state.cellsCount}]})
+    const addColumn = update(this.state.cellsArray, {$push: [{id: this.state.cellsArray + 1}]})
 
     this.setState({
       cellsCount: this.state.cellsCount + 1,
@@ -54,7 +52,7 @@ export default class Grid extends Component {
   }
 
   addRow () {
-    const addRow = update(this.state.rowsArray, {$push: [{cells: this.state.cellsArray, id: this.state.rowsCount}]})
+    const addRow = update(this.state.rowsArray, {$push: [{cells: this.state.cellsArray, id: this.state.rowsArray + 1}]})
 
     this.setState({
       rowsCount: this.state.rowsCount + 1,
@@ -105,11 +103,13 @@ export default class Grid extends Component {
   }
 
   hideButtonsOutContainer (e) {
-    if (e.target === this.refs.removeColbtn || e.target === this.refs.removeRowbtn) {
-      return
-    }
+    let timer = setTimeout(() => {
+      this.hideButtons()
+    }, 1000)
 
-    this.hideButtons()
+    if (e.target === this.refs.removeColbtn || e.target === this.refs.removeRowbtn) {
+      clearTimeout(timer)
+    }
   }
 
   hideButtons () {
@@ -141,22 +141,23 @@ export default class Grid extends Component {
     })
 
     return (
-      <div className="app-container" onMouseEnter={this.showButtons} onMouseLeave={this.hideButtonsOutContainer}>
-        {<button style={this.cellStyle}
+      <div className="app-container" onMouseMove={this.showButtons} onMouseLeave={this.hideButtonsOutContainer}>
+        <button style={this.cellStyle}
                  onMouseLeave={this.hideButtons}
                  ref="removeColbtn"
                  className={removeColbtn}
-                 onClick={this.removeColumn}>&minus;</button>}
-        {<button style={this.cellStyle}
+                 onClick={this.removeColumn}>&minus;</button>
+        <button style={this.cellStyle}
                  ref="removeRowbtn"
                  onMouseLeave={this.hideButtons}
                  className={removeRowbtn}
-                 onClick={this.removeRow}>&minus;</button>}
+                 onClick={this.removeRow}>&minus;</button>
         <button style={this.cellStyle} className="container__add_column" onClick={this.addColumn}>&#43;</button>
         <button style={this.cellStyle} className="container__add_row" onClick={this.addRow}>&#43;</button>
         <div className="wrapper" onMouseMove={this.moveRemoveButtons}>
-          {this.state.rowsArray.map(row => <div className="row" key={row.id}> {
-            this.state.cellsArray.map(cell => <Cell key={cell.id} index={cell.id} style={this.cellStyle} />)}</div>)}
+          {this.state.rowsArray.map(row => <div className="row" key={row.id}>
+            {this.state.cellsArray.map(cell => <Cell key={cell.id} index={cell.id} style={this.cellStyle} />)}</div>)
+          }
         </div>
       </div>
     )
